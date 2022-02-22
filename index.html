@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Досуговые организации Перми</title>
+  <link rel="stylesheet" href="./libs/v6.12.0-dist/ol.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-1">
+      <div class="sidebar">
+        <h2>Базовые слои</h2>
+        <input type="radio" name='baseLayerRadioButton' value='OSMStand' checked>OSM<br>
+        <input type="radio" name='baseLayerRadioButton' value='YandexStand'>Яндекс.Карты<br>
+        <input type="radio" name='baseLayerRadioButton' value='YandexSAT'>Яндекс.Карты (Спутник)<br>
+
+        <h2>Тематические слои</h2>
+        <input type="checkbox" name='rasterLayerCheckBox' value='org'>Досуговые организации<br>
+        <input type="checkbox" name='rasterLayerCheckBox' value='org_plot'>Плотность досуговых организаций<br>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div id='popup-container' class='popup-container'>
+        <p id='popup-coordinates' class='popup-coordinates'></p>
+      </div>
+      <div id='js-map' class='map'></div>
+      <script src='./libs/v6.12.0-dist/ol.js'></script>
+    </div>
+  </div>
+
+<!--
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+-->
+  <script src="https://cdn.maptiler.com/ol-mapbox-style/v5.0.2/olms.js"></script>
+  <script src="./libs/proj4.js"></script>
+  <script src='./main.js'></script>
+  <div id='zoomLevel'></div>
+  <div id='titleBox'>
+    <h2>ДОСУГОВЫЕ ОРГАНИЗАЦИИ ПЕРМИ</h2>
+  </div>
+</body>
+</html>

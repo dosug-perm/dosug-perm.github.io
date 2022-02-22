@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 15vw 85vw;
+  grid-template-rows: 100vh;
+  background-image: url(https://funart.pro/uploads/posts/2021-04/1618427914_19-funart_pro-p-oboi-fon-razmitii-fon-19.jpg);
+}
+
+.sidebar {
+  padding-left: 10px;
+  font-family: monospace;
+  font-size: large;
+  font-weight: bold;
+  color: #eee;
+  text-shadow: 0 0 5px #000;
+}
+
+.ol-control button {
+  background-color: rgba(200, 0, 0, .4)
+}
+
+.ol-control button:focus,.ol-control button:hover {
+  background-color: rgba(200, 0, 0, .6)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.map {
+  height: 100vh;
+  width: 85vw;
+}
+
+.ol-rotate {
+  margin-top: 30px;
+}
+
+.ol-mouse-position {
+  background-color: rgba(200, 0, 0, .4);
+  border-radius: 2px;
+  color: #eee;
+  padding: 1px 5px;
+  margin-top: 4px;
+  margin-right: 35px;
+  font-family: monospace;
+  font-size: large;
+}
+
+.ol-zoomslider {
+  margin-top: 45px;
+  background-color: rgba(200, 0, 0, .4);
+  border-style: solid;
+  border-color:  rgba(255, 255, 255, .8);
+  border-width: 2px;
+}
+
+.ol-zoomslider button {
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.ol-scale-line {
+  background:rgba(200, 0, 0, 0.4);
+  border-radius:4px;
+  bottom:10px;
+  left:14%;
+  padding:2px;
+  position:absolute
+}
+
+.ol-overviewmap:not(.ol-collapsed) button {
+  bottom:2px;
+  left:157px;
+  position:absolute;
+}
+
+#zoomLevel {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 330px;
+  left: 15.6%;
+  background-color: rgba(200, 0, 0, 0.6);
+  text-align: center;
+  padding-top: 5.5px;
+  font-family:"Avenir Next W00","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+#titleBox {
+  border-radius: 5px;
+  width: 480px;
+  height: 40px;
+  position: absolute;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  top: 10px;
+  left: 18%;
+  background-color: rgba(200, 0, 0, 0.6);
+  font-family: monospace;
+  /*font-size: large;*/
+  font-weight: bold;
+  color: #eee;
+  text-shadow: 0 0 5px #000;
+  font-size: 20px;
+}
+
+.popup-coordinates {
+  color: rgb(255, 255, 255);
+  background-color: rgba(200, 0, 0, 0.6);
+  margin: 0.5em;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 14px;
+  /*padding: 5px;*/
+}
+
+.overlay-container {
+  text-align: center;
+  font-size: large;
+  padding: 4px 4px;
+  color: rgb(255, 255, 255);
+  background-color:brown;
+  margin: 0.5em;
+  border-radius: 5px;
+}
+
+/*.ol-zoom-extent, .ol-scale-line, .ol-full-screen, .ol-zoom {
+  background-color: rgba(200, 0, 0, .4)
+}
+
+.ol-zoom:hover, .ol-full-screen:hover, .ol-zoom-extent:hover, .ol-zoomslider button:hover, .ol-zoomslider:hover, .ol-rotate:hover {
+  background-color: rgba(200, 0, 0, .6)
+}
