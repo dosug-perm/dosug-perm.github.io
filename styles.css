@@ -452,4 +452,10 @@ input[type="checkbox"] {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: bold;
+  background-color: rgba(40, 135, 175, 0.8);
+  color: #eee;
+  padding: 3px;
+  border-radius: 15px;
+  outline: 1mm solid rgba(230, 230, 230);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
