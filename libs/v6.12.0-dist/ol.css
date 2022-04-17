@@ -188,7 +188,7 @@
   top: 5.5em
 }
 
-.ol-control button:focus, .ol-control button:hover {
+.ol-control button:hover {
   text-decoration: none;
   background-color: rgba(0, 60, 136, .7)
 }
